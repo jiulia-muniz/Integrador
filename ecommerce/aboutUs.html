@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />           
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sobre Nós!</title>
+    <!-- fonte importada do google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet" />
+      <!-- bootsrap icones -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- link css -->
+    <link rel="stylesheet" href="styles/styles.css" />
+    <!-- link javascript -->
+    <script type="module" src="scripts/functions.js"></script>
+    <script type="module" src="scripts/home.js" defer ></script>
+  </head>
+<body>
+    <!-- Header cabeça -->
+    <header>
+      <!-- barra de informações do cabeçalho -->
+      <div id="header-info-bar">
+        <!-- container ajuda a centralizar o contéudo -->
+        <!-- informações para o usuário ver -->
+        <!-- tipo a localização da loja -->
+        <h4>Campinas - SP</h4>
+        <!-- mostrar que vende em todo o brasil -->
+        <!-- que fornece compras online ou por telefone -->
+        <h4>
+          Entregamos em todo o Brasil - compre online ou ligue para 0800 123
+          4567
+        </h4>
+        <!-- linha para ajuda -->
+         <a href="talkToUs.html"><h4>Precisa de ajuda?</h4></a>
+      </div>
+      <!-- restante do conteúdo do cabeçalho... -->
+      <div id="header-top" class="container">
+        <!-- logo da loja -->
+        <div class="header-logo">
+          <a href="index.html"><img src="./images/site/logo.png" alt="Logo da loja Dawn" /></a>
+        </div>
+        <!-- barra de pesquisa -->
+        <div class="search-bar">
+          <i class="bi bi-search"></i>
+          <input type="text" name="search" id="search" placeholder="O que você precisa?" />
+        </div>
+        <!-- icones do topo do cabeçalho -->
+        <div class="header-top-icons">
+          <!-- para mandar p/ adm -->
+          <a href="adm.html"><i class="bi bi-person"></i></a>
+          <!-- para mandar p/ carrinho -->
+          <a href="checkout.html"><i class="bi bi-cart"></i></a>
+          
+        </div>
+      </div>
+      <!-- nav bar-->
+      <nav class="header-navbar" id="navbar">
+        <ul class="container">
+          <!-- todas acessam a pagina de produtos -->
+          <li><a href="products.html">Moletons</a></li>
+          <li><a href="products.html">Baixo</a></li>
+          <li><a href="products.html">Top's</a></li>
+          <li><a href="products.html">Acessórios</a></li>
+          <li><a href="products.html">Todos</a></li>
+        </ul>
+      </nav>
+    </header> 
+
+    <!-- Seção Sobre Nós -->
+    <main class="sobre-nos">
+        <section class="sobre-container">
+            <div class="texto">
+                <h1>Sobre Nós</h1>
+                <p>
+                    Bem-vindo a <strong>DAWN</strong>, onde estilo, sustentabilidade e economia caminham lado a lado! Somos um brechó especializado em roupas garimpadas com cuidado e bom gosto, oferecendo peças únicas para quem valoriza qualidade e custo-benefício.
+                </p>
+                <p>
+                    Aqui na <strong>DAWN</strong>, acreditamos que cada peça conta uma história e que moda consciente é o futuro. Nosso objetivo é tornar a experiência de compra prática, acessível e cheia de charme, sempre com o compromisso de reduzir o impacto ambiental. 
+                </p>
+                <p>
+                    Junte-se a nós e descubra um mundo de roupas incríveis, perfeitas para expressar sua personalidade sem pesar no bolso!
+                </p>
+            </div>
+            <div class="imagem">
+                <img src="images/site/logopt2.jpg" alt="Imagem ilustrativa do brechó">
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer já existente -->
+    <footer>
+      <!-- box1 ajuda -->
+      <div class="container-footer">
+        <div class="box">
+          <h2 class="title-principal">Ajuda</h2>
+          <a href="aboutUs.html"><h3 class="escopos">Sobre nós</h3></a>
+          <a href="talkToUs.html"><h3 class="escopos">Fale conosco</h3></a>
+          <a href="adm.html"><h3 class="escopos">Administrador</h3></a>
+          <h3 class="escopos">Prazo de envio</h3>
+        </div>
+        <!-- box2 atendimento -->
+        <div class="box">
+          <h2 class="title-principal">Atendimento</h2>
+          <h3 class="escopos">24/7 no site ou diariamente <p>das 9h ás 22h.</h3>
+          <div class="tel">
+            <a href="talkToUs.html"><img src="images/icons/telefone.png" alt="icone de telefone" id="icon-telefone">  </a>
+            
+            <p class="number-footer">333 - 333 - 333</p>
+          </div>
+        </div>
+        <!-- box3 pagamento -->
+        <div class="box">
+          <h2 class="title-principal">Pagamento</h2>
+          <h3 class="escopos">Aceitamos todas as formas de pagamento.</h3>
+          <div class="pagamento">
+            <a href="#"><img src="images/icons/elo.png" alt="Bandeira cartão elo"></a>
+            <a href="#"><img src="./images/icons/hipercad.png" alt="Bandeira cartão hipercard"></a>
+            <a href="#"><img src="./images/icons/visa.png" alt="Bandeira cartão visa"></a>
+            <a href="#"><img src="./images/icons/pix.png" alt="Bandeira pix"></a>
+          </div>  
+        </div>
+        <!-- box4 redes sociais -->
+        <div class="box">
+          <h2 class="title-principal">Redes Sociais</h2>
+          <h3 id="text">Acompanhe as novidades <p>pelas nossas redes sociais.</p></h3>
+          <img src="images/icons/tik-tok.png" alt="icone do tiktok" class="icon-rede">
+          <img src="images/icons/instagram.png" alt="icone do instagram" class="icon-rede">
+          <img src="images/icons/youtube.png" alt="icone do youtube" class="icon-rede"> 
+        </div>
+      </div>
+      
+      <!-- parte de direitos reservados -->
+      <div class="direitos">
+        <p id="copyright">©2024 Dawn. Todos os direitos reservados.</p>
+      </div>
+      <!-- fim do conteudo -->
+    </footer>
+    
+</body>
+</html>

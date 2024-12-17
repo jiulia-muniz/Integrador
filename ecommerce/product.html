@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Produto</title>
+  <!-- link de fontes importadas -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet" />
+    <!-- bootstrap icones -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+   <!-- link css -->
+  <link rel="stylesheet" href="styles/styles.css" />
+<!-- link javascript -->
+  <script type="module" src="./scripts/product.js" defer></script>
+</head>
+
+<body>
+   <!-- inicio - header -->
+  <header>
+    <!-- barra de informações do cabeçalho -->
+    <div id="header-info-bar">
+      <!-- container ajuda a centralizar o contéudo -->
+      <!-- informações para o usuário ver -->
+      <!-- tipo a localização da loja -->
+      <h4>Campinas - SP</h4>
+      <!-- mostrar que vende em todo o brasil -->
+      <!-- que fornece compras online ou por telefone -->
+      <h4>
+        Entregamos em todo o Brasil - compre online ou ligue para 0800 123
+        4567
+      </h4>
+      <!-- linha para ajuda linkada p/ pagina talktoUs -->
+       <a href="talkToUs.html"><h4>Precisa de ajuda?</h4></a>
+    </div>
+    <!-- restante do conteúdo do cabeçalho... -->
+    <div id="header-top" class="container">
+      <!-- logo da loja -->
+      <div class="header-logo">
+        <a href="index.html"><img src="./images/site/logo.png" alt="Logo da loja Dawn" /></a>
+      </div>
+      <!-- barra de pesquisa -->
+      <div class="search-bar">
+        <i class="bi bi-search"></i>
+        <input type="text" name="search" id="search" placeholder="O que você precisa?" />
+      </div>
+      <!-- icones do topo do cabeçalho -->
+      <div class="header-top-icons">
+        <a href="adm.html"><i class="bi bi-person"></i></a>
+        <a href="checkout.html"><i class="bi bi-cart"></i></a>
+        
+      </div>
+    </div>
+    <!-- nav bar-->
+    <nav class="header-navbar" id="navbar">
+      <ul class="container">
+        <li><a href="products.html">Moletons</a></li>
+        <li><a href="products.html">Baixo</a></li>
+        <li><a href="products.html">Top's</a></li>
+        <li><a href="products.html">Acessórios</a></li>
+        <li><a href="products.html">Todos</a></li>
+      </ul>
+    </nav>
+  </header> 
+  <!-- Componente Pagina individual de Produtos -->
+  <main class="product main-content container">
+    <h2 class="product text-container page-title-small" id="product-category"></h2>
+    <div class="product text-container" id="product-title">
+      <h4>COD: 12345</h4>
+      <h3 class="product main-text"></h3>
+    </div>
+    <section class="product text-container">
+      <div id="product_page">
+        <div class="grid_col_1">
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+        <div class="grid_col_2">
+
+          <div class="product_price_container">
+            <h2>R$ 399,00</h2>
+            <h5>Ou em ate 10x sem juros de R$ 39,90 no cartão de credito</h5>
+            <div class="quantity">
+              <input type="number" name="quantity" id="quantity" value="1">
+              <button class="shop_btn">comprar</button>
+            </div>
+
+          </div>
+
+          <div class="freight_container">
+            <form action="">
+              <label for="">Calcule seu frete</label>
+
+              <div class="container-flex">
+                <input type="text" name="" id="" placeholder="Digite o cep da entrega">
+                <button class="freight_ok">ok</button>
+              </div>
+
+              <p><a href="">Não sei meu cep</a></p>
+
+            </form>
+          </div>
+
+          <!-- opção de entrega -->
+          <div class="freight_pricing container-flex">
+            <div class="radio">
+              <input type="radio" name="" id="">
+            </div>
+            <div class="pricing">
+              <h3>R$ 20,00</h3>
+              <p>Entrega em até 4 dias uteis</p>
+            </div>
+          </div>
+
+          <div class="freight_pricing container-flex">
+            <div class="radio">
+              <input type="radio" name="" id="">
+            </div>
+            <div class="pricing">
+              <h3>R$ 15,00</h3>
+              <p>Entrega em até 9 dias uteis</p>
+            </div>
+          </div>
+
+          <div class="freight_pricing container-flex">
+            <div class="radio">
+              <input type="radio" name="" id="">
+            </div>
+            <div class="pricing">
+              <h3>R$ 10,00</h3>
+              <p>Entrega em até 12 dias uteis</p>
+            </div>
+          </div>
+
+          <div class="freight_pricing container-flex">
+            <div class="radio">
+              <input type="radio" name="" id="">
+            </div>
+            <div class="pricing">
+              <h3>R$ 8,90</h3>
+              <p>Entrega em até 15 dias uteis</p>
+            </div>
+          </div>
+
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- footer -->
+  <footer>
+    <!-- box1 ajuda-->
+    <div class="container-footer">
+      <div class="box">
+        <h2 class="title-principal">Ajuda</h2>
+        <a href="aboutUs.html"><h3 class="escopos">Sobre nós</h3></a>
+        <a href="talkToUs.html"><h3 class="escopos">Fale conosco</h3></a>
+        <a href="adm.html"><h3 class="escopos">Administrador</h3></a>
+        
+        <h3 class="escopos">Prazo de envio</h3>
+      </div>
+      <!-- box2 atendiimento -->
+      <div class="box">
+        <h2 class="title-principal">Atendimento</h2>
+        <h3 class="escopos">24/7 no site ou diariamente <p>das 9h ás 22h.</h3>
+        <div class="tel">
+          <a href="talkToUs.html"><img src="images/icons/telefone.png" alt="icone de telefone" id="icon-telefone">  </a>
+          
+          <p class="number-footer">333 - 333 - 333</p>
+        </div>
+      </div>
+      <!-- box3 pagamento -->
+      <div class="box">
+        <h2 class="title-principal">Pagamento</h2>
+        <h3 class="escopos">Aceitamos todas as formas de pagamento.</h3>
+        <div class="pagamento">
+          <a href="#"><img src="images/icons/elo.png" alt="Bandeira cartão elo"></a>
+          <a href="#"><img src="./images/icons/hipercad.png" alt="Bandeira cartão hipercard"></a>
+          <a href="#"><img src="./images/icons/visa.png" alt="Bandeira cartão visa"></a>
+          <a href="#"><img src="./images/icons/pix.png" alt="Bandeira pix"></a>
+        </div>  
+      </div>
+      <!-- box4 redes sociais -->
+      <div class="box">
+        <h2 class="title-principal">Redes Sociais</h2>
+        <h3 id="text">Acompanhe as novidades <p>pelas nossas redes sociais.</p></h3>
+        <img src="images/icons/tik-tok.png" alt="icone do tiktok" class="icon-rede">
+        <img src="images/icons/instagram.png" alt="icone do instagram" class="icon-rede">
+        <img src="images/icons/youtube.png" alt="icone do youtube" class="icon-rede"> 
+      </div>
+    </div>
+    
+    <!-- parte de direitos reservados -->
+    <div class="direitos">
+      <p id="copyright">©2024 Dawn. Todos os direitos reservados.</p>
+    </div>
+    <!-- fim do conteudo -->
+  </footer>
+
+
+</body>
+</html>

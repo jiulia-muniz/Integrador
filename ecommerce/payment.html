@@ -1,0 +1,298 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pagamento!</title>
+   <!-- link de fontes importadas -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet"
+  />
+   <!-- bootstrap icones -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+   <!-- link css -->
+  <link rel="stylesheet" href="styles/styles.css" />
+   <!-- link javascript -->
+  <script src="./scripts/payment.js" type="module" defer></script>
+</head>
+  
+<body>
+   <!-- inicio - header -->
+  <header>
+    <!-- barra de informações do cabeçalho -->
+    <div id="header-info-bar">
+      <!-- container ajuda a centralizar o contéudo -->
+      <!-- informações para o usuário ver -->
+      <!-- tipo a localização da loja -->
+      <h4>Campinas - SP</h4>
+      <!-- mostrar que vende em todo o brasil -->
+      <!-- que fornece compras online ou por telefone -->
+      <h4>
+        Entregamos em todo o Brasil - compre online ou ligue para 0800 123
+        4567
+      </h4>
+       <!-- linha para ajuda linkada p/ pagina talktoUs -->
+       <a href="talkToUs.html"><h4>Precisa de ajuda?</h4></a>
+    </div>
+    <!-- restante do conteúdo do cabeçalho... -->
+    <div id="header-top" class="container">
+      <!-- logo da loja -->
+      <div class="header-logo">
+        <a href="index.html"><img src="./images/site/logo.png" alt="Logo da loja Dawn" /></a>
+      </div>
+      <!-- barra de pesquisa -->
+      <div class="search-bar">
+        <i class="bi bi-search"></i>
+        <input type="text" name="search" id="search" placeholder="O que você precisa?" />
+      </div>
+      <!-- icones do topo do cabeçalho -->
+      <div class="header-top-icons">
+        <a href="adm.html"><i class="bi bi-person"></i></a>
+        <a href="checkout.html"><i class="bi bi-cart"></i></a>
+        
+      </div>
+    </div>
+    <!-- nav bar-->
+    <nav class="header-navbar" id="navbar">
+      <ul class="container">
+        <li><a href="products.html">Moletons</a></li>
+        <li><a href="products.html">Baixo</a></li>
+        <li><a href="products.html">Top's</a></li>
+        <li><a href="products.html">Acessórios</a></li>
+        <li><a href="products.html">Todos</a></li>
+      </ul>
+    </nav>
+  </header> 
+  
+  <!-- Componente Formulario conclusao de compra -->
+  <main class="product main-content container">
+    <div class="product text-container">
+      <h2 class="main-text">Checkout</h2>
+      <p>Verifique os itens do carrinho e finalize agora</p>
+    </div>
+
+    <!-- parte de inserção de dados do cliente -->
+    <section class="product text-container">
+      <div id="billing">
+        <div class="grid_col_1">
+          <form action="">
+            <h2>Seus Dados:</h2>
+            <div class="form-fields">
+              <Div class="form-field">
+                <label for="e-mail">E-mail</label>
+                <input type="e-mail" name="e-mail" id="e-mail" placeholder="e-mail">
+              </Div>
+              <div class="form-group container-flex">
+                <Div class="form-field">
+                  <label for="name">Nome</label>
+                  <input type="text" name="name" id="name" placeholder="Nome">
+                </Div>
+                <Div class="form-field">
+                  <label for="Sobrenome">Sobrenome</label>
+                  <input type="text" name="surname" id="surname" placeholder="Sobrenome">
+                </Div>
+              </div>
+
+              <div class="form-group container-flex">
+                <Div class="form-field">
+                  <label for="phone">Telefone</label>
+                  <input type="text" name="phone" id="phone" placeholder="Telefone com DDD">
+                </Div>
+                <Div class="form-field">
+                  <label for="CPF">CPF</label>
+                  <input type="text" name="CPF" id="CPF" placeholder="CPF">
+                </Div>
+              </div>
+              <div class="form-group container-flex">
+                <Div class="form-field">
+                  <label for="address">Logradouro</label>
+                  <input type="text" name="address" id="address" placeholder="Logradouro">
+                </Div>
+                <Div class="form-field cep">
+                  <label for="zip">CEP</label>
+                  <input type="text" name="zip" id="zip" placeholder="CEP">
+                </Div>
+              </div>
+
+
+              <div class="form-group container-flex">
+                <Div class="form-field">
+                  <label for="address">Nº</label>
+                  <input type="text" name="number" id="number" placeholder="Nº">
+                </Div>
+                <Div class="form-field">
+                  <label for="address_2">Complemento</label>
+                  <input type="address_2" name="address_2" id="address_2" placeholder="Complemento">
+                </Div>
+                <Div class="form-field">
+                  <label for="neighborhood">Bairro</label>
+                  <input type="text" name="neighborhood" id="neighborhood" placeholder="Bairro">
+                </div>
+              </div>
+
+              <div class="form-group container-flex">
+
+                <Div class="form-field">
+                  <label for="city">Cidade</label>
+                  <input type="text" name="city" id="city" placeholder="Cidade">
+                </Div>
+                <Div class="form-field uf">
+                  <label for="state">Estado</label>
+                  <select id="estado" name="UF">
+                    <option value="" selected>Selecione...</option>
+                    <option value="AC">AC</option>
+                    <option value="AL">AL</option>
+                    <option value="AP">AP</option>
+                    <option value="AM">AM</option>
+                    <option value="BA">BA</option>
+                    <option value="CE">CE</option>
+                    <option value="DF">DF</option>
+                    <option value="ES">ES</option>
+                    <option value="GO">GO</option>
+                    <option value="MA">MA</option>
+                    <option value="MT">MT</option>
+                    <option value="MS">MS</option>
+                    <option value="MG">MG</option>
+                    <option value="PA">PA</option>
+                    <option value="PB">PB</option>
+                    <option value="PR">PR</option>
+                    <option value="PE">PE</option>
+                    <option value="PI">PI</option>
+                    <option value="RJ">RJ</option>
+                    <option value="RN">RN</option>
+                    <option value="RS">RS</option>
+                    <option value="RO">RO</option>
+                    <option value="RR">RR</option>
+                    <option value="SC">SC</option>
+                    <option value="SP">SP</option>
+                    <option value="SE">SE</option>
+                    <option value="TO">TO</option>
+                  </select>
+                </Div>
+              </Div>
+            </div>
+          </form>
+
+        </div>
+    <!-- calculo do compra -->
+        <div class="grid_col_2">
+
+          <div class="total_container container-flex column">
+            <div class="total container-flex">
+              <h3>SUBTOTAL</h3>
+              <H3>R$ 0.00</H3>
+            </div>
+            <div class="total container-flex">
+              <h3>Frete</h3>
+              <H3>R$ 0.00</H3>
+            </div>
+            <div class="total container-flex">
+              <h3>Total</h3>
+              <H3>R$ 0.00</H3>
+            </div>
+
+          </div>
+            <!-- opções de pagamento -->
+          <button class="button checkout_btn">Finalizar</button>
+          <form class="container-flex">
+            <div class="pay-method">
+              <input type="radio" name="pagamento" id="credito" checked><label for="credito">Crédito</label>
+            </div>
+            <div class="pay-method">
+              <input type="radio" name="pagamento" id="debito"><label for="debito">Débito</label>
+            </div>
+            <div class="pay-method">
+              <input type="radio" name="pagamento" id="pix"><label for="pix">PIX</label>
+            </div>
+            <div class="pay-method">
+              <input type="radio" name="pagamento" id="bol"><label for="bol">Boleto</label>
+            </div>
+          </form>
+          <form class="payment">
+            <div class="form-field">
+              <label for="nome_cartao">Nome no Cartão:</label>
+              <input type="text" id="nome_cartao" name="nome_cartao" required>
+            </div>
+
+            <div class="form-field">
+              <label for="numero_cartao">Número do Cartão:</label>
+              <input type="text" id="numero_cartao" name="numero_cartao" maxlength="16" required>
+            </div>
+
+            <div class="card-info">
+              <div class="form-field val">
+                <label for="validade_cartao">Validade:</label>
+                <input type="text" id="validade_cartao" name="validade_cartao" placeholder="MM/AA" maxlength="5"
+                  required>
+              </div>
+
+              <div class="form-field cvv">
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" name="cvv" maxlength="3" required>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- footer -->
+  <footer>
+    <!-- box1 ajuda-->
+    <div class="container-footer">
+      <div class="box">
+        <h2 class="title-principal">Ajuda</h2>
+        <a href="aboutUs.html"><h3 class="escopos">Sobre nós</h3></a>
+        <a href="talkToUs.html"><h3 class="escopos">Fale conosco</h3></a>
+        <a href="adm.html"><h3 class="escopos">Administrador</h3></a>
+        
+        <h3 class="escopos">Prazo de envio</h3>
+      </div>
+      <!-- box2 atendimento-->
+      <div class="box">
+        <h2 class="title-principal">Atendimento</h2>
+        <h3 class="escopos">24/7 no site ou diariamente <p>das 9h ás 22h.</h3>
+        <div class="tel">
+          <a href="talkToUs.html"><img src="images/icons/telefone.png" alt="icone de telefone" id="icon-telefone">  </a>
+          
+          <p class="number-footer">333 - 333 - 333</p>
+        </div>
+      </div>
+      <!-- box3 pagamento-->
+      <div class="box">
+        <h2 class="title-principal">Pagamento</h2>
+        <h3 class="escopos">Aceitamos todas as formas de pagamento.</h3>
+        <div class="pagamento">
+          <a href="#"><img src="images/icons/elo.png" alt="Bandeira cartão elo"></a>
+          <a href="#"><img src="./images/icons/hipercad.png" alt="Bandeira cartão hipercard"></a>
+          <a href="#"><img src="./images/icons/visa.png" alt="Bandeira cartão visa"></a>
+          <a href="#"><img src="./images/icons/pix.png" alt="Bandeira pix"></a>
+        </div>  
+      </div>
+      <!-- box4 redes sociais -->
+      <div class="box">
+        <h2 class="title-principal">Redes Sociais</h2>
+        <h3 id="text">Acompanhe as novidades <p>pelas nossas redes sociais.</p></h3>
+        <img src="images/icons/tik-tok.png" alt="icone do tiktok" class="icon-rede">
+        <img src="images/icons/instagram.png" alt="icone do instagram" class="icon-rede">
+        <img src="images/icons/youtube.png" alt="icone do youtube" class="icon-rede"> 
+      </div>
+    </div>
+    
+    <!-- parte de direitos reservados -->
+    <div class="direitos">
+      <p id="copyright">©2024 Dawn. Todos os direitos reservados.</p>
+    </div>
+    <!-- fim do conteudo -->
+  </footer>
+
+</body>
+</html>
+
+
+  
